@@ -1,36 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Sign Up Form</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="main.css">
 </head>
-<body> 
-    <header>HAHAAHAHA</header>
-    <form action="">
-        
-        <div class="first">
-           <label>FIRST NAME</label>
-           <input type="text"required minlength="4" maxlength="8" size="10">
-           <label>EMAIL</label>
-           <input type="email" required>
-           <label>PASSWORD</label>
-           <input type="password" required> 
-        </div>
 
-        <div class="second">
-            <label>LAST NAME</label>
-            <input type="text" required minlength="4" maxlength="10" size="10">
-            <label>PHONE NUMBER</label>
-            <input type="number" required>
-            <label>CONFIRM PASSWORD</label>
-            <input type="password" required>
-        </div>   
-    </form>
-    <button class="btn">Create Account</button>
+<body>
+    <div class="container">
+        <div class="image">
+            <div class="logo">
+                <img src="odin-lined.png" alt="">
+            <h2>ODIN</h2>
+            </div>  
+        </div>
+        <div class="content">
+            
+            <form action="">
+
+                <h1>Sign Up</h1>
+
+                <div class="first">
+                    <label for="firstname">FIRST NAME</label>
+                    <input type="text" required minlength="4" maxlength="8">
+                    <label for="email">EMAIL</label>
+                    <input type="email" required>
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="second">
+                    <label for="lastname">LAST NAME</label>
+                    <input type="text" required minlength="4" maxlength="10">
+                    <label for="phonenumber">PHONE NUMBER</label>
+                    <input type="number" required>
+                    <label for="confirmpassword">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    <p id="message"></p>
+                </div>
+                
+                <button input="button" class="btn" onclick=Alert()>Create Account</button>
+            </form>
+            
+        </div>
+        <div class="clear"></div>
+
+    </div>
+
+    <script src="main.js"></script>
+
 </body>
+
 </html>
