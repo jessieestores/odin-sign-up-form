@@ -1,0 +1,50 @@
+body{
+    margin:150px 0 0 450px;
+    width: 60vh;
+    height: 48vh;
+    border: 1px solid;
+}
+header{
+    /* margin-top: 10px; */
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: rgb(139, 139, 255);
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+}
+.first{
+    display: grid;
+    margin: auto;
+    padding: 1px;
+}
+.first label{
+    margin-top: 5px;
+}
+
+.second{
+    display: grid;
+    margin: auto;
+    padding: 1px;
+}
+.second label{
+    margin-top: 5px;
+}
+input{
+    height: 20px;
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+}
+.btn{
+    height: 30px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 140px;
+    background-color: rgb(139, 139, 255);
+}
