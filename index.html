@@ -27,24 +27,26 @@
 
                 <div class="first">
                     <label for="firstname">FIRST NAME</label>
-                    <input type="text" required minlength="4" maxlength="8">
+                    <input type="text" class="main" required minlength="4" maxlength="8">
                     <label for="email">EMAIL</label>
-                    <input type="email" required>
-                    <label for="password">PASSWORD</label>
+                    <input type="email" class="main" required>
+                    <div class="password"><label for="password">PASSWORD</label>
                     <input type="password" id="password" name="password" required>
-                </div>
+                    <span class="validator">*Passwords do not match</span>
+                    </div>
+            </div>
+                    
 
                 <div class="second">
                     <label for="lastname">LAST NAME</label>
-                    <input type="text" required minlength="4" maxlength="10">
+                    <input type="text" class="main" required minlength="4" maxlength="10">
                     <label for="phonenumber">PHONE NUMBER</label>
-                    <input type="number" required>
+                    <input type="number" class="main" required>
                     <label for="confirmpassword">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirmPassword" name="confirmPassword" required>
-                    <p id="message"></p>
+                    <input type="password" id="confirmPassword" class="password" name="confirmPassword" required>
                 </div>
                 
-                <button input="button" class="btn" onclick=Alert()>Create Account</button>
+                <button input="button" class="btn">Create Account</button>
             </form>
             
         </div>
@@ -52,7 +54,7 @@
 
     </div>
 
-    <script src="main.js"></script>
+    <!-- <script src="main.js"></script> -->
 
 </body>
 

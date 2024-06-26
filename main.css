@@ -72,17 +72,16 @@ form .first{
     margin-top: 50px;
 }
 form .first label{
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 form .second{
     display: grid;
     grid-template-rows: auto;
     margin: 50px 0 0 10px;
-    padding: 1px;
 }
 form .second label{
-    margin-top: 10px;
+    margin-top: 20px;
 }
 input{
     height: 30px;
@@ -90,9 +89,6 @@ input{
     font-size: 15px;
     border: 1px solid #E5E7EB;
     border-radius: 3px;
-}
-.error{
-    display: none;
 }
 
 .btn{
@@ -109,7 +105,40 @@ input{
 }
 
 
-p{
-    display: none;
+span{
+    margin: 0;
+    padding: 0;
     color: red;
+}
+
+.password{
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.password {
+    position: relative;
+    border-color: hsla(0, 96%, 37%, 0.8);
+}
+
+.password input:invalid {
+    border: 2px solid hsla(0, 96%, 37%, 0.8);
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid hsla(253, 100%, 20%, 0.8);
+}
+
+.validator {
+    display: none;
+    color: hsla(0, 96%, 37%, 0.8);
+    position: absolute;
+    bottom: -28px;
+    left: 0px;
+    font-size: 16px;
+}
+
+.password input:invalid + span {
+    display: block;
 }
